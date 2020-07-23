@@ -28,12 +28,12 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |name|string|index: true, null: false, unique:true|
-|E-mail|string|null: false|
-|password|integer|null: false|
+|e_mail|string|null: false|
+|password|string|null: false|
 
 ##  Association
 - has_many :comments
-- has_many :groups,through:members
+- has_many :groups
 
 ##  groupsテーブル
 |Column|Type|Options|
@@ -44,13 +44,22 @@ Things you may want to cover:
 -belongs_to :user
 -has many :comment
 
+##  groups_usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+
+##  Association
+-belongs_to :user
+-belongs_to :group
 
 ##  commentsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |body|text|null: false|
-|image|string|
+|image|string||
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
