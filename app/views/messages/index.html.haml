@@ -1,0 +1,39 @@
+.wrapper
+  .side__bar
+    .side__bar__header
+      .side__bar__header__header-box
+        .side__bar__header__header-box__user-name masa
+        %ul.side__bar__header__header-box__icon
+          %li.side__bar__header__header-box__icon__edit
+            = link_to "#" do
+              = icon('far', 'edit')
+          %li.side__bar__header__header-box__icon__groups-new
+            = link_to "#" do
+              = icon('fa', 'cog')
+    .side__bar__groups
+      %ul.side__bar__groups__group
+        =link_to "#" "group" do
+          %li.side__bar__groups__group__name techcamp
+          %li.side__bar__groups__group__message まだメッセージはありません
+  .main-chat
+    .main__chat__header
+      .main__chat__header__left-box
+        .main__chat__header__left-box__group-name test
+        .main__chat__header__left-box__group-name__member Member:masa
+      =link_to "#" "Edit" do
+        .right-box__button 
+          Edit
+    .main__chat__messages
+      .main__chat__messages__message
+        .main__chat__messages__message__top-message
+          .main__chat__messages__message__top-message__name masa
+          .main__chat__messages__message__top-message__date 2019/11/20(Wed) 17:43:01
+        .main__chat__messages__message__low-message  おはよう
+    .main__chat__form
+      %form.main__chat__form__new-message
+        .input-box
+          %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+          %label{class: "input-box__image"}
+            =icon('fas', 'image')
+            %input{type: "file", class: "input-box__image-file"}
+        %input{type:"submit", class: "submit-btn "}
