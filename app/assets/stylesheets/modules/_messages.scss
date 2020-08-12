@@ -12,7 +12,7 @@ a {
   display:flex;
 }
 
-.side__bar__header{
+.side-bar__header{
   height:100px;
   background-color:#253141;
   display:flex;
@@ -44,7 +44,7 @@ a {
   color:#ffffff;
 }
 
-.side__bar__groups{
+.side-bar__groups{
   height:calc(100vh - 100px);
   background-color:#2f3e51;
   padding:20px;
@@ -70,7 +70,7 @@ a {
   width:calc( 100vw - 300px);
 }
 
-.main__chat__header{
+.main-chat__header{
   height:100px;
   background-color:#ffffff;
   border-bottom:1px solid #eeeeee;
@@ -96,7 +96,7 @@ a {
   }
 }
 
-.main__chat__messages{
+.main-chat__messages{
   height:calc(100vh - 190px);
   background-color:#fafafa;
   padding:35px 40px 0;
@@ -123,7 +123,7 @@ a {
   }
 }
 
-.main__chat__form{
+.main-chat__form{
   height:90px;
   background-color:#d2d2d2;
   padding:20px 40px;
@@ -162,4 +162,4 @@ a {
   background-color:#38aef0;
   color:#ffffff;
   border-style:none;
-}
+} 
