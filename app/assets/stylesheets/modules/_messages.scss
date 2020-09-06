@@ -103,11 +103,6 @@ a {
   overflow:scroll;
   &__message{
     margin-bottom:46px;
-    &__low-message{
-      font-size:14px;
-      color:#434a54;
-      margin-top:12px;
-    }
     &__top-message{
       display:flex;
       &__name{
@@ -119,6 +114,11 @@ a {
         color:#999999;
         margin-left:10px;
       }
+    &__low-message{
+      font-size:14px;
+      color:#434a54;
+      margin-top:12px;
+    }
     }
   }
 }
